@@ -1,0 +1,74 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Rewards from '../components/Rewards.tsx'
+
+---
+
+<Layout title="Starbuks Rewards">
+	<div class="container h-auto md:h-screen">
+		<div class="bg-teal-900 py-2">
+			<h1 class="ml-7 text-white text-lg font-bold">STARBUCKS® REWARDS</h1>
+		</div>
+		<div class="md:bg-bannerImage bg-right-bottom bg-green-100 md:h-screen  md:bg-center md:bg-cover ">
+			<div class="md: w-1/2 h-screen flex flex-col justify-center items-start">
+				<h2 class="leading-10  mb-10 w-56 ml-24 font-bold text-3xl">FREE COFFEE IS A TAP AWAY</h2>
+				<p class=" ml-24 w-36 my-6 text-lg font-semibold">Join now to start earning Rewards</p>
+				<button class="bg-emerald-600 ml-24 font-semibold rounded-2xl text-lg text-white py-1 px-3">Join now</button>
+			</div>
+		</div>
+		<div class="h-auto mt-36 flex flex-col py-20">
+			<div class="mt-16 md: flex flex-col justify-center items-center">
+				<h2 class="m-4 font-bold text-2xl">Getting started is easy</h2>
+				<p class="m-4 font-normal text-center text-lg">
+					Earn Stars and get rewarded in a few easy steps.
+				</p>
+			</div>
+			<div class="flex flex-col md:flex-row mt-20 h-auto">
+				<div class=" flex flex-col justify-center items-center my-3">
+					<h2 class="text-emerald-900  w-9 font-bold text-center text-2xl  md:w-auto md:py-3 md:px-5 rounded-full border-2 border-emerald-700">1</h2>
+					<p class="text-xl font-semibold md:my-3">Create an account</p>
+					<p class="text-center w-3/4">To get started, join now. You can also join in the app to get access to the full range of Starbucks® Rewards benefits.</p>
+				</div>
+				<div class="flex flex-col justify-center items-center my-3">
+					<h2  class="text-emerald-900  w-9 font-bold text-center text-2xl  md:w-auto md:py-3 md:px-5 rounded-full border-2 border-emerald-700">2</h2>
+					<p class="text-xl font-semibold md:my-3">Order and pay how you'd like</p>
+					<p class="text-center w-3/4">Use cash, credit/debit card or save some time and pay right through the app. You’ll collect Stars all ways.</p>
+				</div>
+				<div class="flex flex-col justify-center items-center my-3">
+					<h2 class="text-emerald-900  w-9 font-bold text-center text-2xl  md:w-auto md:py-3 md:px-5 rounded-full border-2 border-emerald-700">3</h2>
+					<p class="text-xl font-semibold md:my-3">Earn stars, get Rewards</p>
+					<p class="text-center w-3/4">As you earn Stars, you can redeem them for Rewards—like free food, drinks, and more. Start redeeming with as little as 25 Stars!</p>
+				</div>
+			</div>
+		</div>
+		<Rewards client:load/>
+		<div class="h-auto my-8 py-10 flex flex-col justify-center items-center">
+			<h2 class=" font-bold text-2xl">Endless Extras</h2>
+			<p class=" text-md my-5 px-3  text-center w-full md:w-1/2 md:text-lg">Joining Starbucks® Rewards means unlocking access to exclusive benefits. Say hello to easy ordering, tasty Rewards and—yes, free coffee.</p>
+			<div class=" py-6 md:flex flex-row">
+				<div class="flex my-12 flex-col justify-center items-center md:mx-7">
+					<img class="h-36 w-36" src="https://www.starbucks.com/weblx/images/rewards/benefits/1-fun-freebies.jpg"/>
+					<h2 class="font-bold text-xl">Fun freebies</h2>
+					<p class=" w-80 text-center">Not only can you earn free coffee, look forward to a birthday treat plus coffee and tea refills.</p>
+					<a class="text-green-800 underline text-lg" href="www.google.com">Learn more</a>
+				</div>
+				<div class="flex my-12 flex-col justify-center items-center md:mx-7">
+					<img class="h-36 w-36" src="https://www.starbucks.com/weblx/images/rewards/benefits/2-order-and-pay-ahead.jpg"/>
+					<h2 class="font-bold text-xl">Fun freebies</h2>
+					<p class=" w-80 text-center">Enjoy the convenience of in-store, curbside or drive-thru pickup at select stores.</p>
+					<a class="text-green-800 underline text-lg" href="www.google.com">Learn more</a>
+				</div>
+				<div class="flex my-12 flex-col justify-center items-center md:mx-7">
+					<img class="h-36 w-36" src="https://www.starbucks.com/weblx/images/rewards/benefits/3-get-to-free-faster.jpg"/>
+					<h2 class="font-bold text-xl">Fun freebies</h2>
+					<p class=" w-80 text-center">Earn Stars even quicker with Bonus Star challenges, Double Star Days and exciting games.</p>
+					<a class="text-green-800 underline text-lg" href="www.google.com">Learn more</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	
+</style>
